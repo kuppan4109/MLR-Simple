@@ -1,4 +1,4 @@
-# Loading required libraries
+#Loading required libraries
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -63,17 +63,17 @@ x=train.drop(target_variable,axis=1).values
 label=train.drop(target_variable,axis=1).columns.values
 y=train[target_variable].values
 
-# Spliting training and testing data
+#Spliting training and testing data
 
 predictors_train, predictors_test, target_train, target_test = train_test_split(x,y, test_size=0.3, random_state=0)
 
-# Training the model using training data
+#Training the model using training data
 
 mlr_mod = sm.OLS(target_train,predictors_train).fit()
 
 mlr_mod.summary()
 
-# Evaluating model using testing data
+#Evaluating model using testing data
 
 pred = mlr_mod.predict(predictors_test)
 
