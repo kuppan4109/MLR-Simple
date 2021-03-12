@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+        stages{
+        stage('checkout'){
+            steps{
+                git branch: 'main', credentialsId: '9c0d8d2f-2d9a-40a7-8c4e-96aeb0236c12', url: 'https://github.com/kuppan4109/MLR-Simple.git'
+            }
+        }
+        stage('train'){
+            steps{
+                bat label: '', script: '''cd src/
+python Prediction_hr.py '''
+            }
+        }
+		}
+	}
