@@ -3,4 +3,4 @@ path = /input/
 input_file=hr
 target_variable=SatisfactoryLevel
 [output]
-path=  /output/
+path = /output/
