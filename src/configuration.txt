@@ -1,0 +1,6 @@
+[input]
+path = C:\Users\Kuppan Murugappan\Desktop\MLOps_sample\input\
+input_file=hr
+target_variable=SatisfactoryLevel
+[output]
+path=  C:\Users\Kuppan Murugappan\Desktop\MLOps_sample\output\
